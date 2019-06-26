@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C9DAA2E-2FA0-46D0-9C29-1BE20317C14C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TSE</RootNamespace>
+    <AssemblyName>TSE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>TSExpert.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DTAPINET64, Version=5.2.0.20, Culture=neutral, PublicKeyToken=8f326389dc760240, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3party\DTAPINET64.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataInTime.cs" />
+    <Compile Include="DektecDevice.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocalStreamDescrambler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocalStreamDescrambler.Designer.cs">
+      <DependentUpon>FormLocalStreamDescrambler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocalStreamDump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocalStreamDump.Designer.cs">
+      <DependentUpon>FormLocalStreamDump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocalStreamScrambler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocalStreamScrambler.Designer.cs">
+      <DependentUpon>FormLocalStreamScrambler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocalStreamUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocalStreamUpdate.Designer.cs">
+      <DependentUpon>FormLocalStreamUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocalStreamWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocalStreamWorker.Designer.cs">
+      <DependentUpon>FormLocalStreamWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGateway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGateway.Designer.cs">
+      <DependentUpon>FormGateway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSectionParser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSectionParser.Designer.cs">
+      <DependentUpon>FormSectionParser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerFileDataSearch.cs" />
+    <Compile Include="StreamParserCore.cs" />
+    <Compile Include="WorkerFile.cs" />
+    <Compile Include="WorkerFileDescrambler.cs" />
+    <Compile Include="WorkerFilePidBitrate.cs" />
+    <Compile Include="PidUpdate.cs" />
+    <Compile Include="FormPidBitrate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPidBitrate.Designer.cs">
+      <DependentUpon>FormPidBitrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMuxBitrate.cs" />
+    <Compile Include="CaDescriptor.cs" />
+    <Compile Include="ComponentStream.cs" />
+    <Compile Include="Descriptor.cs" />
+    <Compile Include="FormCrc32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrc32.Designer.cs">
+      <DependentUpon>FormCrc32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerFilePidDump.cs" />
+    <Compile Include="WorkerFileRoutineParsing.cs" />
+    <Compile Include="MessageNotification.cs" />
+    <Compile Include="ManagerMRU.cs" />
+    <Compile Include="MuxBitrate.cs" />
+    <Compile Include="FormMuxBitrate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMuxBitrate.Designer.cs">
+      <DependentUpon>FormMuxBitrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PidProfile.cs" />
+    <Compile Include="ManagerPid.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="ManagerPidBitrate.cs" />
+    <Compile Include="PidBitrate.cs" />
+    <Compile Include="FormSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch.Designer.cs">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRequest.cs" />
+    <Compile Include="ManagerSection.cs" />
+    <Compile Include="DataParser.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="ManagerService.cs" />
+    <Compile Include="Channel.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StreamDemux.cs" />
+    <Compile Include="StreamParserContext.cs" />
+    <Compile Include="FormFileStreamParser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFileStreamParser.Designer.cs">
+      <DependentUpon>FormFileStreamParser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StreamParserSession.cs" />
+    <Compile Include="FormUDPHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUDPHelper.Designer.cs">
+      <DependentUpon>FormUDPHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerFilePidUpdate.cs" />
+    <Compile Include="WorkerFileScrambler.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrc32.resx">
+      <DependentUpon>FormCrc32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocalStreamDescrambler.resx">
+      <DependentUpon>FormLocalStreamDescrambler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocalStreamDump.resx">
+      <DependentUpon>FormLocalStreamDump.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocalStreamScrambler.resx">
+      <DependentUpon>FormLocalStreamScrambler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocalStreamUpdate.resx">
+      <DependentUpon>FormLocalStreamUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocalStreamWorker.resx">
+      <DependentUpon>FormLocalStreamWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPidBitrate.resx">
+      <DependentUpon>FormPidBitrate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMuxBitrate.resx">
+      <DependentUpon>FormMuxBitrate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGateway.resx">
+      <DependentUpon>FormGateway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSectionParser.resx">
+      <DependentUpon>FormSectionParser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormFileStreamParser.resx">
+      <DependentUpon>FormFileStreamParser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch.resx">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUDPHelper.resx">
+      <DependentUpon>FormUDPHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DocumentOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\WindowClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\ApplicationExit.png" />
+    <None Include="res\Parse.png" />
+    <None Include="res\Section.png" />
+    <Content Include="TSExpert.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InActionLibrary\InActionLibrary.csproj">
+      <Project>{295f72b6-382e-4381-ab57-df6a44bfe883}</Project>
+      <Name>InActionLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

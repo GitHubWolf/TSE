@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TsPacketParser", "TsPacketParser\TsPacketParser.csproj", "{586261D5-CF19-4E91-8930-2045CB200973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesPacketParser", "PesPacketParser\PesPacketParser.csproj", "{8AE1E54C-3116-4886-9DC6-57A410645DD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrivateSectionParser", "PrivateSectionParser\PrivateSectionParser.csproj", "{A2502A5B-7DA0-473D-8E60-7C49A9DFE55A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSU", "SSU\SSU.csproj", "{6FEAF466-2CF2-4D8A-BF0E-390A6AB4D2A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mpeg2PesPacketParser", "Mpeg2PesPacketParser\Mpeg2PesPacketParser.csproj", "{0FCFBE2B-564E-4AC3-9D91-67188DF4475B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mpeg2VideoPesPacketParser", "Mpeg2VideoPesPacketParser\Mpeg2VideoPesPacketParser.csproj", "{83DA0648-A113-4CE1-9F88-54FA303E24AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mpeg4VideoPesPacketParser", "Mpeg4VideoPesPacketParser\Mpeg4VideoPesPacketParser.csproj", "{9A4E9F4C-B2F7-4AF2-A3E0-16543666BE4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{586261D5-CF19-4E91-8930-2045CB200973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586261D5-CF19-4E91-8930-2045CB200973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586261D5-CF19-4E91-8930-2045CB200973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586261D5-CF19-4E91-8930-2045CB200973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE1E54C-3116-4886-9DC6-57A410645DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE1E54C-3116-4886-9DC6-57A410645DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE1E54C-3116-4886-9DC6-57A410645DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE1E54C-3116-4886-9DC6-57A410645DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2502A5B-7DA0-473D-8E60-7C49A9DFE55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2502A5B-7DA0-473D-8E60-7C49A9DFE55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2502A5B-7DA0-473D-8E60-7C49A9DFE55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2502A5B-7DA0-473D-8E60-7C49A9DFE55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEAF466-2CF2-4D8A-BF0E-390A6AB4D2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEAF466-2CF2-4D8A-BF0E-390A6AB4D2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEAF466-2CF2-4D8A-BF0E-390A6AB4D2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEAF466-2CF2-4D8A-BF0E-390A6AB4D2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FCFBE2B-564E-4AC3-9D91-67188DF4475B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FCFBE2B-564E-4AC3-9D91-67188DF4475B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FCFBE2B-564E-4AC3-9D91-67188DF4475B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FCFBE2B-564E-4AC3-9D91-67188DF4475B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DA0648-A113-4CE1-9F88-54FA303E24AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DA0648-A113-4CE1-9F88-54FA303E24AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DA0648-A113-4CE1-9F88-54FA303E24AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DA0648-A113-4CE1-9F88-54FA303E24AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4E9F4C-B2F7-4AF2-A3E0-16543666BE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4E9F4C-B2F7-4AF2-A3E0-16543666BE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4E9F4C-B2F7-4AF2-A3E0-16543666BE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4E9F4C-B2F7-4AF2-A3E0-16543666BE4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF8DC889-EB18-41CC-907D-021081C4705C}
+	EndGlobalSection
+EndGlobal
